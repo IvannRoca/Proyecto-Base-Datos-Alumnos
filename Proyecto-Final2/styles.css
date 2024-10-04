@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: rgb(220, 204, 184);
+}
+h1, h2 {
+    color: #333;
+}
+form {
+    background: rgb(225, 223, 223);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+input, select, button {
+    margin: 10px 0;
+    padding: 5px;
+    width: 100%;
+}
+button {
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: rgb(62, 62, 241);
+}
+#studentList, #groupList {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestión de Estudiantes</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <h1>Sistema de Gestión de Estudiantes</h1>
+    
+    <form id="studentForm">
+        <h2>Agregar Estudiante</h2>
+        <input type="text" id="name" placeholder="Nombre" required>
+        <input type="text" id="lastName" placeholder="Apellidos" required>
+        <input type="number" id="age" placeholder="Edad" required>
+        <button type="submit">Agregar Estudiante</button>
+    </form>
+
+    <form id="subjectForm">
+        <h2>Inscribir a Materia</h2>
+        <select id="studentSelect"></select>
+        <input type="text" id="subject" placeholder="Materia" required>
+        <button type="submit">Inscribir a Materia</button>
+    </form>
+
+    <form id="gradeForm">
+        <h2>Asignar Calificación</h2>
+        <select id="studentGradeSelect"></select>
+        <select id="subjectSelect"></select>
+        <input type="number" id="grade" placeholder="Calificación" min="0" max="10" step="0.1" required>
+        <button type="submit">Asignar Calificación</button>
+    </form>
+
+    <form id="groupForm">
+        <h2>Crear Grupo</h2>
+        <input type="text" id="groupName" placeholder="Nombre del Grupo" required>
+        <button type="submit">Crear Grupo</button>
+    </form>
+
+    <form id="assignToGroupForm">
+        <h2>Asignar Estudiante a Grupo</h2>
+        <select id="groupSelect"></select>
+        <select id="studentGroupSelect"></select>
+        <button type="submit">Asignar a Grupo</button>
+    </form>
+
+    <div>
+        <h2>Búsqueda y Ordenamiento</h2>
+        <input type="text" id="searchInput" placeholder="Buscar por nombre o apellido">
+        <button id="searchBtn">Buscar</button>
+        <button id="sortAscBtn">Ordenar Ascendente</button>
+        <button id="sortDescBtn">Ordenar Descendente</button>
+        <button id="getGroupAverageBtn">Promedio del Grupo</button>
+    </div>
+
+    <div id="studentList"></div>
+    <div id="groupList"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
